@@ -18,15 +18,24 @@
     background-color: var(--third-color) !important;
 }
 
+.my-a-bgcolor {
+    background-color: #165bba;
+}
+
 /* Regole Generali */
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
+
+.fs_a {
+    font-size: 10px;
+} 
 
 /* Header */
 header {
@@ -53,9 +62,14 @@ aside {
     background-size: cover;
 }
 
+/* Section */
+section {
+    height: calc(100vh - 70px);
+    overflow: auto;
+    background-color: var(--main-color);
+}
 
 /* Media Query */
-
 @media screen and (min-width: 991px) and (max-width: 1412px) {
     
     aside .row span{
@@ -64,11 +78,17 @@ aside {
 
 }
 
-/* Debug */
-.debug section {
-    height: calc(100vh - 70px);
-    overflow: auto;
-    background-color: brown;
+@media screen and (max-width: 426px) {
+
+    section .row {
+        gap: 15px;
+    }
+    
+    section .text-end {
+        text-align: start !important;
+    }
+
 }
+
 
 

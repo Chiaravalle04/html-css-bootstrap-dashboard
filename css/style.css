@@ -69,6 +69,11 @@ section {
     background-color: var(--main-color);
 }
 
+.my_size {
+    width: 25px;
+    height: 25px;
+}
+
 /* Media Query */
 @media screen and (min-width: 991px) and (max-width: 1412px) {
     

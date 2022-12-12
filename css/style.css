@@ -1,0 +1,55 @@
+/* Variabili */
+:root {
+    --main-color: #f8f9fa;
+    --second-color: #e5e5e5;
+    --third-color: #1b72e8;
+}
+
+/* Classi Colore BG */
+.my-m-bgcolor {
+    background-color: var(--main-color) !important;
+}
+
+.my-s-bgcolor {
+    background-color: var(--second-color) !important;
+}
+
+.my-t-bgcolor {
+    background-color: var(--third-color) !important;
+}
+
+/* Regole Generali */
+
+/* Header */
+header {
+    height: 70px;
+    background-color: var(--main-color);
+}
+
+header .row {
+    height: 70px;
+}
+
+input[type="search"]:focus {
+    background-color: var(--second-color) !important;
+    border-color: var(--second-color);
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Debug */
+
+
+.debug aside {
+    height: calc(100vh - 70px);
+    background-color: teal;
+}
+
+.debug section {
+    height: calc(100vh - 70px);
+    overflow: auto;
+    background-color: brown;
+}
+
+

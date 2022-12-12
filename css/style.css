@@ -19,6 +19,14 @@
 }
 
 /* Regole Generali */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* Header */
 header {
@@ -37,15 +45,26 @@ input[type="search"]:focus {
     box-shadow: none !important;
 }
 
-
-/* Debug */
-
-
-.debug aside {
+/* Aside */
+aside {
     height: calc(100vh - 70px);
-    background-color: teal;
+    background-image: url('../img/sidebar-bg.png');
+    background-color: #051e34;
+    background-size: cover;
 }
 
+
+/* Media Query */
+
+@media screen and (min-width: 991px) and (max-width: 1412px) {
+    
+    aside .row span{
+        margin-left: 0 !important;
+    }
+
+}
+
+/* Debug */
 .debug section {
     height: calc(100vh - 70px);
     overflow: auto;

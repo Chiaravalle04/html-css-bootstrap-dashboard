@@ -84,10 +84,6 @@ section {
         gap: 15px;
     }
     
-    section .text-end {
-        text-align: start !important;
-    }
-
 }
 
 

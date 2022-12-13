@@ -63,7 +63,11 @@ aside {
 }
 
 .my-hover:hover {
-    background-color: var(--second-color);
+    background-color: var(--main-color) !important;
+    color: var(--third-color) !important;
+}
+
+.my-hover:hover i {
     color: var(--third-color) !important;
 }
 
@@ -77,6 +81,10 @@ section {
     height: 25px;
 }
 
+.my_panel {
+    width: 50% !important;
+}
+
 /* Media Query */
 @media screen and (min-width: 991px) and (max-width: 1412px) {
     
@@ -84,6 +92,14 @@ section {
         margin-left: 0 !important;
     }
 
+}
+
+@media screen and (max-width: 769px) {
+
+    .my_panel {
+        width: 100% !important;
+    }
+    
 }
 
 @media screen and (max-width: 426px) {

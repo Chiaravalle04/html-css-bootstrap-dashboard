@@ -62,6 +62,11 @@ aside {
     background-size: cover;
 }
 
+.my-hover:hover {
+    background-color: var(--second-color);
+    color: var(--third-color) !important;
+}
+
 /* Section */
 section {
     height: calc(100vh - 70px);
